@@ -1,8 +1,8 @@
 {
   "id": "justitian-plot-hooks",
   "title": "JUSTITIAN: 300 Plot Hooks",
-  "description": "300 plot hooks, encounters, and story seeds for DEGENESIS: JUSTITIAN, organized as four rollable tables — one per chapter of the original fan supplement by Obie_Decker & Kleffe. A community fanwork for the DEGENESIS: Rebirth system.",
-  "version": "1.0.0",
+  "description": "300 plot hooks, encounters, and story seeds for DEGENESIS: JUSTITIAN, organized as four rollable tables \u2014 one per chapter of the original fan supplement by Obie_Decker & Kleffe. A community fanwork for the DEGENESIS: Rebirth system.",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "13",
     "verified": "14.364"
@@ -15,7 +15,12 @@
       "name": "Hermes Agent (module adaptation)"
     }
   ],
-  "system": ["degenesis"],
+  "url": "https://github.com/Stefans-ttrpgs-tinkerings/justitian-plot-hooks",
+  "manifest": "https://raw.githubusercontent.com/Stefans-ttrpgs-tinkerings/justitian-plot-hooks/main/module.json",
+  "download": "https://github.com/Stefans-ttrpgs-tinkerings/justitian-plot-hooks/releases/download/v1.0.1/justitian-plot-hooks.zip",
+  "system": [
+    "degenesis"
+  ],
   "packs": [
     {
       "name": "plot-hooks",
