@@ -23,8 +23,8 @@
       "path": "packs/plot-hooks",
       "type": "RollTable",
       "ownership": {
-        "GM": 3,
-        "PLAYER": 2
+        "3": 3,
+        "2": 2
       }
     }
   ],
