@@ -1,0 +1,36 @@
+{
+  "id": "justitian-plot-hooks",
+  "title": "JUSTITIAN: 300 Plot Hooks",
+  "description": "300 plot hooks, encounters, and story seeds for DEGENESIS: JUSTITIAN, organized as four rollable tables — one per chapter of the original fan supplement by Obie_Decker & Kleffe. A community fanwork for the DEGENESIS: Rebirth system.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14.364"
+  },
+  "authors": [
+    {
+      "name": "Obie_Decker & Kleffe (original fanwork)"
+    },
+    {
+      "name": "Hermes Agent (module adaptation)"
+    }
+  ],
+  "system": ["degenesis"],
+  "packs": [
+    {
+      "name": "plot-hooks",
+      "label": "Justitian: 300 Plot Hooks",
+      "path": "packs/plot-hooks",
+      "type": "RollTable",
+      "ownership": {
+        "GM": 3,
+        "PLAYER": 2
+      }
+    }
+  ],
+  "flags": {
+    "justitian-plot-hooks": {
+      "credit": "Original fanwork 'JUSTITIAN: 300 Plot Hooks' by Obie_Decker & Kleffe, community content for DEGENESIS. DEGENESIS (R) is (TM) SIXMOREVODKA Studio GmbH. All rights reserved."
+    }
+  }
+}

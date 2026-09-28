@@ -1,0 +1,6 @@
+# LevelDB transient files
+packs/*/LOCK
+packs/*/LOG
+packs/*/LOG.old
+packs/*/lost+found
+packs/**/*.log
