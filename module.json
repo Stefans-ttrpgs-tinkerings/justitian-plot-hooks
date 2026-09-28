@@ -21,11 +21,7 @@
       "name": "plot-hooks",
       "label": "Justitian: 300 Plot Hooks",
       "path": "packs/plot-hooks",
-      "type": "RollTable",
-      "ownership": {
-        "3": 3,
-        "2": 2
-      }
+      "type": "RollTable"
     }
   ],
   "flags": {
