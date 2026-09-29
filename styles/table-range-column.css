@@ -1,23 +1,33 @@
-/* JUSTITIAN: 300 Plot Hooks - remove the die-face box from table results.
+/* JUSTITIAN: 300 Plot Hooks - table column balancing.
    Scope: only images pointing at this module's blank face; other tables are unaffected. */
 
-/* View mode: results render their face img inside the leading cell. Hide ours. */
+/* View mode: hide our blank face img wherever results render it. */
 .roll-table-sheet table td img[src="modules/justitian-plot-hooks/art/blank.svg"],
 .roll-table-embed img[src="modules/justitian-plot-hooks/art/blank.svg"] {
   display: none !important;
 }
 
-/* Remove the leading face column entirely on our table sheets.
-   The blank img is hidden above, so the cell is empty for every row of our
-   sheets; also drop the header cell so no empty box remains. */
+/* Remove the leading face column entirely in table view: no header cell, no empty box. */
 .roll-table-sheet.view-mode table th:first-child,
 .roll-table-sheet.view-mode table td:first-child {
   display: none;
 }
 
-/* Tighten the range column: numbers only, no face-sized gap. */
+/* Rebalanced columns: compact left-aligned Range, Details takes all remaining width. */
 .roll-table-sheet.view-mode table th.range,
 .roll-table-sheet.view-mode table td.range {
-  flex: 0 0 12ch;
-  justify-content: start;
+  flex: 0 0 5.5rem;
+  justify-content: flex-start;
+  padding: 0 0.5rem 0 0.25rem;
+}
+
+.roll-table-sheet.view-mode table td.details,
+.roll-table-sheet.view-mode table td.result,
+.roll-table-sheet.view-mode table td.description {
+  flex: 1 1 auto;
+}
+
+/* Header labels align with their columns. */
+.roll-table-sheet.view-mode table th.range {
+  text-align: left;
 }
