@@ -1,0 +1,22 @@
+/* JUSTITIAN: 300 Plot Hooks - remove the die-face box from table results.
+   Scope: only images pointing at this module's blank face; other tables are unaffected. */
+
+/* View mode: results render their face img inside the image/range cells. Hide ours. */
+.roll-table-sheet table td img[src="modules/justitian-plot-hooks/art/blank.svg"],
+.roll-table-embed img[src="modules/justitian-plot-hooks/art/blank.svg"] {
+  display: none !important;
+}
+
+/* Collapse the now-empty image column. */
+.roll-table-sheet.view-mode table th.image,
+.roll-table-sheet.view-mode table td.image {
+  flex: 0 0 8px;
+  padding-left: 0;
+}
+
+/* Tighten the range column: numbers only, no face-sized gap. */
+.roll-table-sheet.view-mode table th.range,
+.roll-table-sheet.view-mode table td.range {
+  flex: 0 0 12ch;
+  justify-content: start;
+}
